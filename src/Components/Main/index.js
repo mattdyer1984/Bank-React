@@ -1,19 +1,22 @@
 import "./main.css"
 
-function Main() {
+function Main(props) {
+   
+
     return(
 <div className="container">
     <div>
-
+    {props.balanceProp}
     </div>
+    
     <div>
-        <button>Withdraw £10</button>
+        <button onClick={props.withdrawProp}>Withdraw £10</button>
     </div>
     <div>
 
     </div>
       <div>
-      <button>Deposit £10</button>
+      <button className={props.themesProp} onClick={props.depositProp}>Deposit £10</button>
       </div>
 </div>
     )
